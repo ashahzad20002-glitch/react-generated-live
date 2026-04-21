@@ -1,0 +1,35 @@
+595-         {pillar.id}
+596-       </motion.div>
+597-
+598-       <div className="flex-1 w-full relative z-10">
+599-          <div className="relative aspect-[3/4] md:aspect-[4/5] w-full overflow-hidden shrink-0 group">
+600:             <motion.img 
+601-               style={{ scale: 1.15, y: y1 }}
+602-               src={pillar.img1} 
+603-               alt={pillar.title}
+604-               className="absolute inset-0 w-full h-full object-cover filter contrast-[1.1] grayscale-[0.2]"
+605-             />
+--
+690-  return (
+691-    <section className="relative min-h-screen bg-stone-100 flex items-center justify-center overflow-hidden py-32 z-20 shadow-[0_30px_60px_rgba(0,0,0,0.1)]">
+692-      {/* Background Images Crossfade Layer */}
+693-      <div className="absolute inset-0 pointer-events-none z-0">
+694-        <AnimatePresence mode="popLayout">
+695:          <motion.img 
+696-            key={activeIndex}
+697-            initial={{ opacity: 0, scale: 1.05, filter: "blur(10px)" }}
+698-            animate={{ opacity: 0.15, scale: 1, filter: "blur(0px)" }}
+699-            exit={{ opacity: 0, filter: "blur(10px)" }}
+700-            transition={{ duration: 1.2, ease: "easeInOut" }}
+--
+2176-              transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+2177-              style={{ flexBasis: '0' }}
+2178-              data-cursor="hover"
+2179-            >
+2180-              {/* Image */}
+2181:              <motion.img 
+2182-                src={mat.img} alt={mat.name} 
+2183-                className="absolute inset-0 w-full h-[150%] object-cover origin-center"
+2184-                animate={{ scale: isActive ? 1 : 1.15, y: isActive ? '0%' : '-10%' }}
+2185-                transition={{ duration: 1.2, ease: "easeOut" }}
+2186-                referrerPolicy="no-referrer"
