@@ -626,7 +626,7 @@ function HeroSection() {
         <div className="w-full h-full overflow-hidden rounded-2xl relative">
           <div className="absolute inset-0 bg-charcoal/30 z-10"></div>
           <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2560"
+            src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&q=85&w=2560"
             alt="Interior Architecture"
             className="w-full h-[120%] object-cover object-center translate-y-[-10%]"
             referrerPolicy="no-referrer"
@@ -734,16 +734,16 @@ function PhilosophySection() {
       quote:
         "Space is not a void to be filled, but a tactile medium to be sculpted.",
       body: "We believe architecture must move beyond shelter. It must orchestrate a sequence of spatial events that heighten human awareness. Every threshold, corridor, and antechamber is designed as a psychological transition.",
-      img1: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=1000",
-      img2: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800",
+      img1: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=85&w=1200",
+      img2: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=85&w=900",
     },
     {
       id: "02",
       title: "Light & Resonance",
       quote: "Before we draw a wall, we study the trajectory of the sun.",
       body: "Light is our most profound building material. It defines the volumetric qualities of our structures, carving mass and establishing rhythm. We treat shadows not as an absence of light, but as an active component of the architectural composition.",
-      img1: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000",
-      img2: "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&q=80&w=800",
+      img1: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=85&w=1200",
+      img2: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&q=85&w=900",
     },
     {
       id: "03",
@@ -751,8 +751,8 @@ function PhilosophySection() {
       quote:
         "Materials should express their inherent truth and register the passage of time.",
       body: "We strip away the extraneous. Our palette relies on the elemental: board-formed concrete, untreated timber, oxidized steel, and quarried stone. These materials do not degrade; they achieve patina, rooting the architecture to its geological context.",
-      img1: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1000",
-      img2: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+      img1: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=85&w=1200",
+      img2: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=85&w=900",
     },
   ];
 
@@ -881,49 +881,49 @@ function PrinciplesSection() {
       name: "Clarity",
       label: "Spatial Legibility",
       desc: "The deliberate reduction of visual noise. We believe a space must be instantly comprehensible, guiding the occupant through intuitive geometric logic without reliance on arbitrary ornamentation.",
-      img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=85&w=2000",
     },
     {
       id: "02",
       name: "Proportion",
       label: "Mathematical Harmony",
       desc: "Every dimension is rigorously calculated. We employ ancient mathematical ratios and the Fibonacci sequence to ensure the scale of the structure resonates perfectly with the human body.",
-      img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&q=85&w=2000",
     },
     {
       id: "03",
       name: "Light",
       label: "Volumetric Carving",
       desc: "Light is treated as a physical building material. The precise orientation of apertures captures the solar trajectory, carving mass with shadow and fundamentally altering the perception of time.",
-      img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&q=85&w=2000",
     },
     {
       id: "04",
       name: "Environment",
       label: "Climatic Response",
       desc: "True sustainability is invisible. We engineer passive thermal regulation, strategic airflow, and deep environmental integration so the structure functions organically within its specific biosphere.",
-      img: "https://images.unsplash.com/photo-1518599904199-0ca897819ddb?auto=format&fit=crop&q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=85&w=2000",
     },
     {
       id: "05",
       name: "Structure",
       label: "Tectonic Truth",
       desc: "We do not hide the load paths. The engineering of the building is exposed and celebrated. Beams, columns, and joints are expressed honestly as primary aesthetic elements.",
-      img: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=85&w=2000",
     },
     {
       id: "06",
       name: "Detail",
       label: "Micro-Scale Resolution",
       desc: "God is in the intersection. How a steel column meets a concrete slab is given the same obsessive scrutiny as the overall urban massing. The detail reveals the underlying integrity.",
-      img: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=85&w=2000",
     },
     {
       id: "07",
       name: "Livability",
       label: "Human Centricity",
       desc: "Architecture must serve its inhabitants. Beyond sculptural ambition, we prioritize psychological comfort, ergonomic flow, and the tangible enhancement of daily human rituals.",
-      img: "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&q=85&w=2000",
     },
   ];
 
@@ -1132,7 +1132,7 @@ function GridSection() {
                   className="w-full h-full"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200"
+                    src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=85&w=1400"
                     alt="Interior Detail"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
@@ -1162,7 +1162,7 @@ function GridSection() {
                   className="w-full h-full relative"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1200"
+                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=85&w=1400"
                     alt="Architecture Facade"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
@@ -1183,7 +1183,7 @@ function GridSection() {
                       className="absolute inset-0 h-1/4"
                     >
                       <img
-                        src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1200"
+                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=85&w=1400"
                         alt=""
                         className="w-full h-[400%] max-w-none object-cover"
                         style={{ marginTop: "0%" }}
@@ -1211,7 +1211,7 @@ function ExhibitionSection() {
       location: "Swiss Alps, CH",
       year: "2024",
       desc: "Anchored into the bedrock, the structure acts as a thermal mass, absorbing solar radiation during the day and radiating it into the living quarters at night. A stark concrete monolith against the snow.",
-      img: "https://images.unsplash.com/photo-1518599904199-0ca897819ddb?auto=format&fit=crop&q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=85&w=2400",
       layout: "left",
     },
     {
@@ -1221,7 +1221,7 @@ function ExhibitionSection() {
       location: "Kyoto, JP",
       year: "2023",
       desc: "An exploration of translucency. Ribbed glass and impossibly thin steel define a pavilion that filters the surrounding forest light, creating an interior atmosphere of total suspension.",
-      img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=85&w=2400",
       layout: "right",
     },
     {
@@ -1231,7 +1231,7 @@ function ExhibitionSection() {
       location: "Oslo, NO",
       year: "2022",
       desc: "Designed to age. The weathering steel facade records the atmospheric memory of the city, shifting from bright orange to deep umber as it oxidizes in the coastal air.",
-      img: "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=85&w=2400",
       layout: "center",
     },
   ];
@@ -1294,7 +1294,7 @@ function ExhibitionArtwork({ work, index }: { work: any; index: number }) {
           <img
             src={work.img}
             alt={work.title}
-            className="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-1000 ease-[0.19,1,0.22,1]"
+            className="w-full h-full object-cover filter grayscale-[0.3] contrast-[1.05] group-hover:grayscale-0 group-hover:contrast-110 transition-all duration-1000 ease-[0.19,1,0.22,1]"
             referrerPolicy="no-referrer"
           />
         </motion.div>
@@ -1500,19 +1500,19 @@ function HorizontalProjects() {
     {
       title: "The Glass Pavilion",
       location: "Surrey",
-      img: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=85&w=2400",
       year: "2025",
     },
     {
       title: "Kensington Townhouse",
       location: "London",
-      img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=85&w=2400",
       year: "2024",
     },
     {
       title: "Brutal Minimal",
       location: "Swiss Alps",
-      img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=85&w=2400",
       year: "2023",
     },
   ];
@@ -1839,7 +1839,7 @@ function ProcessSection() {
   const progressHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   const imgUrl =
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000";
+    "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=85&w=2400";
 
   return (
     <section
@@ -2401,19 +2401,19 @@ function ServicesSection() {
   const services = [
     {
       title: "Residential Architecture",
-      img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=85&w=1000",
     },
     {
       title: "Interior Orchestration",
-      img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&q=85&w=1000",
     },
     {
       title: "Bespoke Extensions",
-      img: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=85&w=1000",
     },
     {
       title: "Commercial Spaces",
-      img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=85&w=1000",
     },
   ];
 
@@ -2928,7 +2928,7 @@ function SiteContextSection() {
   const windY = useTransform(scrollYProgress, [0.5, 0.6], [20, 0]);
 
   const mapUrl =
-    "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=2000";
+    "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=85&w=2400";
 
   return (
     <section ref={containerRef} className="h-[300vh] bg-charcoal relative z-20">
@@ -3136,31 +3136,31 @@ function MaterialitySection() {
       name: "Cast Concrete",
       desc: "Raw, unyielding structure. Establishing a permanent and commanding dialogue.",
       spec: "Density: 2400 kg/m³",
-      img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=85&w=2000",
     },
     {
       name: "Travertine Stone",
       desc: "Timeless warmth and texture. Echoing archaic geology through precise cuts.",
       spec: "Finish: Honed & Filled",
-      img: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1618219744061-9b7f25e8a56a?q=85&w=2000",
     },
     {
       name: "Ribbed Glass",
       desc: "Luminous distortion. Filtering light while protecting privacy and mystery.",
       spec: "Transmittance: 85%",
-      img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=85&w=2000",
     },
     {
       name: "Oak Timber",
       desc: "Living geometry. Introducing biological warmth into the Cartesian grid.",
       spec: "Grain: Rift Sawn",
-      img: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?q=85&w=2000",
     },
     {
       name: "Corten Steel",
       desc: "Oxidized permanence. A material that matures, recording atmospheric time.",
       spec: "Alloy: Weathering",
-      img: "https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2000",
+      img: "https://images.unsplash.com/photo-1518599904199-0ca897819ddb?q=85&w=2000",
     },
   ];
 
@@ -3309,42 +3309,42 @@ function TimelineSection() {
       category: "Discovery",
       title: "Site Consultation",
       desc: "Assessing topographic reality, atmospheric conditions, and client intent to establish a rigorous feasibility matrix.",
-      img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=85&w=1400",
     },
     {
       num: "02",
       category: "Form Finding",
       title: "Spatial Massing",
       desc: "Translating program into volume. We sculpt initial raw geometry using light, shadow, and primitive structural forms.",
-      img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=85&w=1400",
     },
     {
       num: "03",
       category: "Architecture",
       title: "Master Planning",
       desc: "Codifying the circulation. Defining the Cartesian grid, load paths, and the exact dimensional relationships of the layout.",
-      img: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=85&w=1400",
     },
     {
       num: "04",
       category: "Micro Scale",
       title: "Technical Detailing",
       desc: "God is in the intersection. Engineering tectonic connections, material transitions, and hyper-precise micro-resolutions.",
-      img: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=85&w=1400",
     },
     {
       num: "05",
       category: "Integration",
       title: "Systems Coordination",
       desc: "Synchronizing mechanical, electrical, and structural systems organically within the architectural cavity without visual compromise.",
-      img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&q=85&w=1400",
     },
     {
       num: "06",
       category: "Completion",
       title: "Physical Handover",
       desc: "The transition from theoretical diagram to permanent reality. The architecture ceases to be a drawing and becomes a living organism.",
-      img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=85&w=1400",
     },
   ];
 
@@ -3500,7 +3500,7 @@ function ArchiveSection() {
   const items = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800",
+      src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=85&w=1000",
       top: "20%",
       left: "10%",
       rotation: -5,
@@ -3508,7 +3508,7 @@ function ArchiveSection() {
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
+      src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=85&w=1000",
       top: "15%",
       left: "55%",
       rotation: 8,
@@ -3516,7 +3516,7 @@ function ArchiveSection() {
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=800",
+      src: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=85&w=1000",
       top: "50%",
       left: "30%",
       rotation: -2,
