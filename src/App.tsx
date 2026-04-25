@@ -588,10 +588,10 @@ function MagneticButton({ children }: { children: React.ReactNode }) {
 
 function HeroSection() {
   const { scrollY } = useScroll();
-  const yImage = useTransform(scrollY, [0, 1000], [0, 400]);
-  const yText = useTransform(scrollY, [0, 1000], [0, 150]);
+  const yImage = useTransform(scrollY, [0, 1000], [0, 260]);
+  const yText = useTransform(scrollY, [0, 1000], [0, 110]);
   const opacity = useTransform(scrollY, [0, 800], [1, 0]);
-  const scaleText = useTransform(scrollY, [0, 800], [1, 1.2]);
+  const scaleText = useTransform(scrollY, [0, 800], [1, 1.05]);
 
   // Feature: Scroll Lens Blur
   const backgroundBlur = useTransform(
@@ -605,30 +605,34 @@ function HeroSection() {
   return (
     <section
       onMouseMove={(e) => setMouse({ x: e.clientX, y: e.clientY })}
-      className="sticky top-0 h-screen w-full overflow-hidden bg-stone-50 flex items-center justify-center shadow-2xl z-0 rounded-b-[40px]"
+      className="sticky top-0 h-screen w-full overflow-hidden bg-charcoal flex items-center justify-center shadow-2xl z-0 rounded-b-[40px]"
     >
-      <div className="absolute inset-0 z-0 bg-blueprint opacity-20 mix-blend-multiply"></div>
+      <div className="absolute inset-0 z-0 bg-blueprint-dark opacity-20 mix-blend-screen"></div>
+      <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-stone-50/65 via-stone-50/15 to-transparent z-30 pointer-events-none"></div>
 
       {/* Ambient Sunlight Simulator */}
-      <div className="absolute inset-0 z-[5] mix-blend-overlay ambient-sunlight"></div>
+      <div className="absolute inset-0 z-[5] mix-blend-overlay ambient-sunlight opacity-60"></div>
 
       {/* Feature 5: Volumetric Mouse Lighting Spotlight */}
       <motion.div
         animate={{ x: mouse.x, y: mouse.y }}
         transition={{ type: "tween", ease: "easeOut", duration: 0.2 }}
-        className="absolute left-0 top-0 w-[40vh] h-[40vh] rounded-full bg-white opacity-40 blur-[120px] pointer-events-none mix-blend-overlay z-20 -translate-x-1/2 -translate-y-1/2 hidden md:block"
+        className="absolute left-0 top-0 w-[40vh] h-[40vh] rounded-full bg-white opacity-25 blur-[120px] pointer-events-none mix-blend-overlay z-20 -translate-x-1/2 -translate-y-1/2 hidden md:block"
       />
 
       <motion.div
         style={{ y: yImage, opacity, filter: backgroundBlur }}
-        className="absolute inset-0 w-full h-full p-4 md:p-12 z-10 pointer-events-none"
+        className="absolute inset-0 w-full h-full p-3 md:p-8 lg:p-12 z-10 pointer-events-none"
       >
-        <div className="w-full h-full overflow-hidden rounded-2xl relative">
-          <div className="absolute inset-0 bg-charcoal/30 z-10"></div>
+        <div className="w-full h-full overflow-hidden rounded-2xl relative bg-charcoal">
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/45 to-black/5 z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-black/10 z-10"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:25%_100%,100%_33.333%] mix-blend-overlay opacity-25 z-10"></div>
+          <div className="absolute inset-0 bg-noise mix-blend-overlay opacity-20 z-10"></div>
           <img
-            src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&q=85&w=2560"
-            alt="Interior Architecture"
-            className="w-full h-[120%] object-cover object-center translate-y-[-10%]"
+            src="https://images.unsplash.com/photo-1774516534779-b787e82ff1e6?auto=format&fit=crop&q=88&w=2560"
+            alt="Contemporary concrete residence set into a rugged landscape"
+            className="w-full h-[118%] object-cover object-[center_68%] translate-y-[-7%] saturate-[0.85] contrast-[1.08]"
             referrerPolicy="no-referrer"
           />
         </div>
@@ -636,26 +640,73 @@ function HeroSection() {
 
       <motion.div
         style={{ y: yText, scale: scaleText }}
-        className="relative z-20 text-center pointer-events-none px-4 flex flex-col items-center origin-center"
+        className="relative z-20 w-full h-full pointer-events-none px-6 md:px-12 lg:px-20 flex flex-col justify-end pb-24 md:pb-28 lg:pb-32 origin-bottom"
       >
-        <h1 className="font-serif tracking-tighter leading-[0.8] type-intersect drop-shadow-2xl">
-          <span className="block text-[15vw] text-white relative z-10 drop-shadow-[0_0_30px_rgba(0,0,0,0.5)]">
-            SPATIAL
-          </span>
-          <span
-            className="block text-[15vw] text-transparent font-light italic ml-12 overflow-hidden drop-shadow-lg"
-            style={{ WebkitTextStroke: "2px rgba(255, 255, 255, 0.9)" }}
+        <div className="max-w-6xl">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.1, ease: [0.76, 0, 0.24, 1] }}
+            className="mb-6 flex flex-wrap items-center gap-4 text-[10px] md:text-xs uppercase font-mono tracking-[0.24em] text-white/70"
           >
-            <motion.span
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              transition={{ duration: 1, delay: 1.2, ease: [0.76, 0, 0.24, 1] }}
-              className="inline-block"
+            <span className="h-px w-12 bg-white/45"></span>
+            <span>Architecture & Interiors for Private Residences</span>
+          </motion.div>
+
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-7xl xl:text-8xl tracking-normal leading-[0.95] text-white max-w-7xl drop-shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
+            <span className="block">Homes shaped by</span>
+            <span className="block italic font-light text-stone-200">
+              site, light, and material.
+            </span>
+          </h1>
+
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 1.25, ease: [0.76, 0, 0.24, 1] }}
+            className="mt-8 flex flex-col lg:flex-row lg:items-end gap-8 lg:gap-16"
+          >
+            <p className="max-w-xl text-base md:text-lg leading-relaxed text-stone-100/85 font-light">
+              DiagramX is a London architecture and design studio creating
+              refined residences, extensions, and interiors with structural
+              clarity, quiet luxury, and enduring spatial calm.
+            </p>
+
+            <div className="pointer-events-auto flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                data-cursor="hover"
+                className="inline-flex h-12 items-center gap-3 bg-stone-50 px-5 md:px-6 text-[10px] font-semibold uppercase tracking-[0.2em] text-charcoal transition-colors duration-500 hover:bg-white"
+              >
+                Start a Project
+                <ArrowRight className="h-3.5 w-3.5" />
+              </a>
+              <a
+                href="#projects"
+                data-cursor="hover"
+                className="inline-flex h-12 items-center border border-white/30 px-5 md:px-6 text-[10px] font-semibold uppercase tracking-[0.2em] text-white transition-colors duration-500 hover:border-white hover:bg-white/10"
+              >
+                Selected Works
+              </a>
+            </div>
+          </motion.div>
+        </div>
+
+        <div className="mt-12 grid w-full max-w-5xl grid-cols-1 gap-4 border-t border-white/20 pt-5 text-[9px] uppercase tracking-[0.22em] text-white/60 sm:grid-cols-3">
+          {[
+            ["01", "Site-Specific Homes"],
+            ["02", "Interiors & Materiality"],
+            ["03", "Extensions & Reworking"],
+          ].map(([num, label]) => (
+            <div
+              key={num}
+              className="flex items-center justify-between gap-4 border-white/15 sm:border-r sm:pr-6 last:border-r-0"
             >
-              POETRY
-            </motion.span>
-          </span>
-        </h1>
+              <span className="font-mono text-white/35">{num}</span>
+              <span className="font-mono text-right text-white/70">{label}</span>
+            </div>
+          ))}
+        </div>
       </motion.div>
 
       <div className="absolute top-[30%] left-12 z-30 hidden lg:flex flex-col gap-8">
@@ -666,7 +717,7 @@ function HeroSection() {
           className="h-px bg-white/40"
         ></motion.div>
         <span className="text-[10px] uppercase font-mono tracking-widest text-white/50 writing-vertical-rl transform rotate-180">
-          EST. 2004
+          EST. 2004 / LONDON
         </span>
       </div>
     </section>
